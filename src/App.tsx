@@ -5,6 +5,7 @@ import BarDataStyle from './BarDataStyle';
 import Scatter from './Scatter';
 import AreaGradient from './AreaGradient';
 import LineLabels from './LineLabels';
+import BrushAndZoom from './BrushAndZoom';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Scatter />
       <AreaGradient />
       <LineLabels />
+      <BrushAndZoom />
     </>
   );
 }
