@@ -3,6 +3,8 @@ import StackedBar from './StackedBar';
 import BarLine from './BarLine';
 import BarDataStyle from './BarDataStyle';
 import Scatter from './Scatter';
+import AreaGradient from './AreaGradient';
+import LineLabels from './LineLabels';
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <BarLine />
       <BarDataStyle />
       <Scatter />
+      <AreaGradient />
+      <LineLabels />
     </>
   );
 }
