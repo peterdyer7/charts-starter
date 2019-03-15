@@ -16,12 +16,14 @@ export default function App() {
     { a: new Date('2019-03-15T12:38:10.664Z'), b: 257, c: 2 }
   ];
 
-  function prepData<
+  function prepTimeseriesData<
     T,
     K1 extends Extract<keyof T, string>,
     K2 extends Extract<keyof T, string>
-  >(obj: Array<T>, xLabel: K1, yLabel: K2): Array<{ x: T[K1]; y: T[K2] }> {
-    const tempData = obj.map((item) => ({ x: item[xLabel], y: item[yLabel] }));
+  >(obj: Array<T>, x: K1, y: K2): Array<{ x: T[K1]; y: T[K2] }> {
+    // extract x and y from a wider object based on labels passed in, replacing existing labels
+    const tempData = obj.map((item) => ({ x: item[x], y: item[y] }));
+    // sort data from earliest to latest
     tempData.sort(function(a, b) {
       const c = a.x;
       const d = b.x;
@@ -34,7 +36,7 @@ export default function App() {
   return (
     <>
       <h2>App</h2>
-      <BasicTimeseries data={prepData(data, 'a', 'b')} />
+      <BasicTimeseries data={prepTimeseriesData(data, 'a', 'b')} />
       <StackedBar />
       <BarLine />
       <BarDataStyle />
