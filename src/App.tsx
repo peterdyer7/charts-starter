@@ -7,7 +7,7 @@ import AreaGradient from './AreaGradient';
 import LineLabels from './LineLabels';
 import BrushAndZoom from './BrushAndZoom';
 import BasicTimeseries from './BasicTimeseries';
-import { number } from 'prop-types';
+import BoxPlot from './BoxPlot';
 
 export default function App() {
   const data = [
@@ -29,13 +29,13 @@ export default function App() {
       const d = b.x;
       return c > d ? 1 : -1;
     });
-    console.log(tempData);
     return tempData;
   }
 
   return (
     <>
       <h2>App</h2>
+      <BoxPlot />
       <BasicTimeseries data={prepTimeseriesData(data, 'a', 'b')} />
       <StackedBar />
       <BarLine />
