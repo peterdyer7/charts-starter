@@ -74,7 +74,6 @@ const rawData = [
   }
 ];
 
-const url = 'https://www.fullsapps.com';
 const location = ['ec2-eu-west-1', 'ec2-us-west-1', 'something'];
 interface BoxPlotData {
   x: string;
