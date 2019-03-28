@@ -9,6 +9,7 @@ import BrushAndZoom from './BrushAndZoom';
 import BasicTimeseries from './BasicTimeseries';
 import BoxPlot from './BoxPlot';
 import PieChart from './PieChart';
+import BarWithLegend from './BarWithLegend';
 
 export default function App() {
   const data = [
@@ -36,7 +37,8 @@ export default function App() {
   return (
     <>
       <h2>App</h2>
-      <PieChart percent={100} title="Lighthouse PWA" />
+      <BarWithLegend />
+      <PieChart percent={49} title="Lighthouse PWA" />
       <BoxPlot />
       <BasicTimeseries data={prepTimeseriesData(data, 'a', 'b')} />
       <StackedBar />
