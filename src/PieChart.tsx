@@ -23,7 +23,7 @@ export default function PieChart({ percent, title }: Props) {
           style={{
             data: {
               fill: (d) => {
-                const color = d.y > 50 ? 'green' : 'red';
+                const color = d.y > 89 ? 'green' : d.y > 49 ? 'orange' : 'red';
                 return d.x === 1 ? color : 'transparent';
               }
             }
