@@ -10,6 +10,7 @@ import BasicTimeseries from './BasicTimeseries';
 import BoxPlot from './BoxPlot';
 import PieChart from './PieChart';
 import BarWithLegend from './BarWithLegend';
+import BasicMap2 from './maps/BasicMap2';
 
 export default function App() {
   const data = [
@@ -37,6 +38,7 @@ export default function App() {
   return (
     <>
       <h2>App</h2>
+      <BasicMap2 />
       <BarWithLegend />
       <PieChart percent={49} title="Lighthouse PWA" />
       <BoxPlot />
