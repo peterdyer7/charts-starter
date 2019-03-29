@@ -8,11 +8,12 @@
     "@types/react": "16.8.6",
     "@types/react-dom": "16.8.2",
     "lodash": "^4.17.11",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^2.1.8",
+    "react-simple-maps": "^0.12.1",
     "typescript": "3.3.3333",
-    "victory": "^32.0.0"
+    "victory": "^32.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,7 +31,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/d3-geo": "^1.11.1",
     "@types/lodash": "^4.14.123",
-    "@types/victory": "^31.0.9"
+    "@types/react-simple-maps": "^0.12.1",
+    "@types/victory": "^31.0.14"
   }
 }
